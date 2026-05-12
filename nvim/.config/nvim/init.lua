@@ -689,7 +689,7 @@ do
     pyright = {},
     ruff = {},
     sourcekit = {
-      cmd = { 'sourcekit-lsp' },
+      cmd = { 'xcrun', 'sourcekit-lsp' },
       filetypes = { 'swift', 'objective-c', 'objective-cpp' },
       mason = false,
     },
@@ -804,6 +804,7 @@ do
     },
     -- You can also specify external formatters in here.
     formatters_by_ft = {
+      swift = { 'swiftformat' },
       -- rust = { 'rustfmt' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
